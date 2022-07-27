@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>가상 선택자</title>
+  <style>
+    a{
+      text-decoration: none;
+    }
+    /* :hover - 마우스를 올려두면 */
+    a:hover{
+      text-decoration: underline;
+    }
+    h1:hover{
+      background-color: silver;
+    }
+    h1:hover span{
+      background-color: pink;
+    }
+    h1 span:hover{
+      background-color: blue;
+    }
+
+    /* HTML에서 tab을 눌렀을 때 포커스기 걸리는 요소
+    1. 링크
+    2. input
+    3. button
+    */
+
+    /* 포커스 안 나오게 하기 */
+    a{
+      outline: none;
+    }
+    input{
+      outline: none;
+    }
+    button{
+      outline: none;
+    }
+    /* 
+      그룹 선택자
+      
+      a, input, button{
+        outline: none;
+      }
+     */
+
+
+    /* 포커스 속성 지정 */
+    a:focus{
+      background-color: silver;
+    }
+
+    /* 클릭했을 때 반응 */
+    a:active{
+      color: yellow;
+    }
+
+    /* 이미 방문한 링크 표시 */
+    a:visited{
+      background-color: blue;
+    }
+  </style>
+</head>
+<body>
+  <h1>Pseudo <span>Selector</span></h1>
+  <a href="">link</a>
+  <a href="" target="_self"></a>
+  <a href="" target="_blank">naver</a>
+  <a href="" target="_blank">daum</a>
+  <form action="">
+    <input type="text">
+    <button>전송</button>
+  </form>
+</body>
+</html>

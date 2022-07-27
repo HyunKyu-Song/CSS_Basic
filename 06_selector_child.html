@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Selector</title>
+  <style>
+    p{
+      font-size: 18px;
+    }
+    /*
+      자식, 자손 선택 하는 법(자기 안에 포함된 것) - 한칸 띄어 쓰기
+    */
+    header p{
+      font-size: 16px;
+    }
+    main p{
+      color: green;
+    }
+    main .desc{
+      background-color: silver;
+    }
+    header h1{
+      color: red;
+    }
+    header h1 a{
+      color: blue;
+    }
+
+    /* 
+      자기 자식만 선택할 때
+        > 를 사용
+     */
+    header > p{
+      color: yellow;
+    }
+  </style>
+</head>
+<body>
+  <h1>child Selector</h1>
+  <header>
+    <h1>
+      <a href="">Logo</a> <!-- a태그는 a까지 직접 접근해야 함-->
+      <span>text</span>
+    </h1>
+    <h2>Sub title</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque numquam non autem quos similique doloremque quisquam magni quo illum cumque, at vitae perferendis, aut rerum quaerat voluptatem aspernatur quis unde?
+    </p>
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem sunt at expedita quia molestias totam, asperiores minus tenetur possimus ipsam optio? Quis id harum laboriosam nulla neque, dicta totam pariatur?
+    </div>
+    <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus libero magnam necessitatibus qui nisi inventore culpa! Facilis libero iure quaerat modi, harum quia. Itaque, deleniti maxime facilis laborum nisi distinctio.</p>
+  </header>
+  <main>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus libero magnam necessitatibus qui nisi inventore culpa! Facilis libero iure quaerat modi, harum quia. Itaque, deleniti maxime facilis laborum nisi distinctio.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus libero magnam necessitatibus qui nisi inventore culpa! Facilis libero iure quaerat modi, harum quia. Itaque, deleniti maxime facilis laborum nisi distinctio.</p>
+    <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus libero magnam necessitatibus qui nisi inventore culpa! Facilis libero iure quaerat modi, harum quia. Itaque, deleniti maxime facilis laborum nisi distinctio.</p>
+    <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus libero magnam necessitatibus qui nisi inventore culpa! Facilis libero iure quaerat modi, harum quia. Itaque, deleniti maxime facilis laborum nisi distinctio.</p>
+  </main>
+</body>
+</html>

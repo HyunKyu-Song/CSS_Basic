@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>단위</title>
+  <style>
+    /*
+      %(퍼센트) - 부모가 만들어준 공간에서의 비율
+    */
+    :root{
+      font-size: 30px;
+    }
+    html{
+      height: 100%;
+    }
+    body{
+      font-size: 16px;
+      width: 800px;
+      height: 100%;
+    }
+    header{
+      background-color: silver;
+      width: 60%;
+      height: 100%;
+    }
+    div{
+      width: 200px;
+      height: 200px;
+      background-color: red;
+    }
+    /* section{
+      width: 200px;
+      height: 200px;
+      background-color: red;
+    } */
+    section p{
+      font-size: 20px;
+    }
+    aside p{
+      font-size: 1.2em;
+      /* 
+        1.2em = 원래 사이즈 * 1.2
+        ex) 원래 16px 이라면 16*1.2 = 19.2px
+      */
+    }
+    aside div{
+      width: 6.25em; 
+      height: 6.25em;
+      /* 16px * 6.25 = 100px (body에서 font-size를 16px로 지정함) */
+    }
+    aside h4{
+      font-size: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>단위</h1>
+  <header>
+    <div>box</div>
+  </header>
+
+  <section>
+    <h2>section title</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, unde odit, mollitia natus numquam est ducimus architecto placeat recusandae asperiores quia cupiditate. Non necessitatibus sed dolor nulla maiores nostrum. Vel.
+    </p>
+  </section>
+  <hr>
+  <h2>em, rem</h2>
+  <pre>
+    em: em단위가 쓰여진 곳의 폰트 사이즈 배수.
+    rem: r(root 기본, 근본) 16의 배수.
+    
+      rem은 기본값인 16의 배수로 증가
+      기본값을 바꾸려면 style에서 
+      :root{
+        font-size: 30px;
+      }
+      이런식으로 적어주면 됨
+  </pre>
+  <aside>
+    <h3>title</h3>
+    <h4>sub title</h4>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quae minima repudiandae odio, consectetur recusandae voluptas modi ipsam doloribus atque totam quo, non fugit nihil repellendus debitis, magnam doloremque laboriosam?
+    </p>
+    <div>box</div>
+  </aside>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>상태 선택자</title>
+  <style>
+    /* input이 클릭되면 label의 글자색이 파란색으로 바뀜 */
+    input:checked + label{
+      color: blue;
+    }
+    #location:target{
+      background-color: grey;
+    }
+    button:disabled{
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <h1>상태 선택자</h1>
+  <!-- <form action="">
+    <label for="new">신입</label>
+    <input type="radio" id="new" name="career" value="신입">
+    
+    <label for="old">경력</label>
+    <input type="radio" id="old" name="career" value="경력">
+  </form> -->
+  <hr>
+  <!-- 부모를 선택할 수 없기에 자리를 바꿔준다. -->
+  <form action="">
+    <input type="radio" id="new" name="career" value="신입">
+    <label for="new">신입</label>
+    
+    <input type="radio" id="old" name="career" value="경력">
+    <label for="old">경력</label>
+    <button disabled>전송</button>
+  </form>
+  <hr>
+  <h2><a href="#location">location</a></h2>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum dolores corporis optio, deserunt obcaecati aspernatur quidem hic quia vitae labore aliquid amet quasi accusantium blanditiis ipsa distinctio enim porro placeat?
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum dolores corporis optio, deserunt obcaecati aspernatur quidem hic quia vitae labore aliquid amet quasi accusantium blanditiis ipsa distinctio enim porro placeat?
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum dolores corporis optio, deserunt obcaecati aspernatur quidem hic quia vitae labore aliquid amet quasi accusantium blanditiis ipsa distinctio enim porro placeat?
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum dolores corporis optio, deserunt obcaecati aspernatur quidem hic quia vitae labore aliquid amet quasi accusantium blanditiis ipsa distinctio enim porro placeat?
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum dolores corporis optio, deserunt obcaecati aspernatur quidem hic quia vitae labore aliquid amet quasi accusantium blanditiis ipsa distinctio enim porro placeat?
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum dolores corporis optio, deserunt obcaecati aspernatur quidem hic quia vitae labore aliquid amet quasi accusantium blanditiis ipsa distinctio enim porro placeat?
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum dolores corporis optio, deserunt obcaecati aspernatur quidem hic quia vitae labore aliquid amet quasi accusantium blanditiis ipsa distinctio enim porro placeat?
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum dolores corporis optio, deserunt obcaecati aspernatur quidem hic quia vitae labore aliquid amet quasi accusantium blanditiis ipsa distinctio enim porro placeat?
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum dolores corporis optio, deserunt obcaecati aspernatur quidem hic quia vitae labore aliquid amet quasi accusantium blanditiis ipsa distinctio enim porro placeat?
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum dolores corporis optio, deserunt obcaecati aspernatur quidem hic quia vitae labore aliquid amet quasi accusantium blanditiis ipsa distinctio enim porro placeat?
+  </p>
+  <h2 id="location">location</h2>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum dolores corporis optio, deserunt obcaecati aspernatur quidem hic quia vitae labore aliquid amet quasi accusantium blanditiis ipsa distinctio enim porro placeat?
+  </p>
+</body>
+</html>

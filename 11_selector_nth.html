@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>nth-child selector</title>
+  <style>
+    /*  같은 결과 나옴
+      nav ul li:first-child{
+        background-color: grey;
+      }
+
+      nav ul > :first-child{
+        background-color: grey;
+    } */
+    
+    
+    /* 
+    nav ul li:first-child{
+      background-color: grey;
+    }
+    nav ul li:nth-child(3){
+      background-color: grey;
+    }
+    nav ul li:last-child{
+      background-color: grey;
+    }
+
+    n은 0부터 시작, even, odd 사용가능
+    nav ul li:nth-child(2n-1){
+      background-color: grey;
+    }
+    */
+
+    /* 2이상 5이하
+    nav ul li:nth-child(n+2):nth-child(-5 + n){
+      background-color: gray;
+    } */
+
+    /* 첫째 빼고 다
+      nav ul li + li{
+        background-color: grey;
+      }
+    */
+
+    /* 같은 종류끼리
+    h2:nth-of-type(2){
+      background-color: grey;
+    } 
+    */
+  </style>
+</head>
+<body>
+  <h1>구조 선택자</h1>
+  <nav>
+    <ul>
+      <li>list1</li>
+      <li>list2</li>
+      <li>list3</li>
+      <li>list4</li>
+      <li>list5</li>
+    </ul>
+  </nav>
+  <hr>
+  <h2>heading 2</h2>
+  <h2>heading 2</h2>
+  <h2>heading 2</h2>
+  <h2>heading 2</h2>
+  <h2>heading 2</h2>
+</body>
+</html>

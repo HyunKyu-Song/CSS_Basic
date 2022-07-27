@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Selector</title>
+  <style>
+    h2{
+      background-color: grey;
+    }
+    .title{
+      color: blue;
+    }
+    .size{
+      font-size: 2em;
+    }
+    .color{
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <h1>CSS Selector</h1>
+  <h2>tag selector</h2>
+  <h2 class="title">tag selector</h2> 
+  <!-- 
+    class를 여러 개 사용하는 법
+    class="이름1 이름2" (o)
+    class="이름1" class="이름2" (x)
+  -->
+  <h2 class="title size">tag selector</h2>
+  <h2 class="title size color">tag selector</h2>
+  <h3>title</h3>
+  <h3>title</h3>
+  <h3>title</h3>
+  <h3>title</h3>
+</body>
+</html>
