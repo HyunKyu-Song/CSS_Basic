@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>우선순위</title>
+  <style>
+    #text_id{
+      background-color: pink !important;
+    }
+    #text_id{
+      background-color: blue;
+    }
+    .text{
+      background-color: coral;
+    }
+    p{
+      background-color: silver;
+    }
+  </style>
+</head>
+<body>
+  <h1>Selector Priority</h1>
+  <p id="text_id" class="text" style="background-color: yellow;">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, assumenda possimus dolore ea blanditiis, libero quisquam molestiae odit tempora iure at nemo neque nisi cumque, voluptas sequi optio atque ipsum.
+  </p>
+  <p class="text">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, assumenda possimus dolore ea blanditiis, libero quisquam molestiae odit tempora iure at nemo neque nisi cumque, voluptas sequi optio atque ipsum.
+  </p>
+  <p class="text">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, assumenda possimus dolore ea blanditiis, libero quisquam molestiae odit tempora iure at nemo neque nisi cumque, voluptas sequi optio atque ipsum.
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, assumenda possimus dolore ea blanditiis, libero quisquam molestiae odit tempora iure at nemo neque nisi cumque, voluptas sequi optio atque ipsum.
+  </p>
+  <pre>
+                  - 대략 수치 - <hr>
+                  낮음<--->높음
+    * < tag < class < id < inline style < !important 
+  </pre>
+</body>
+</html>
