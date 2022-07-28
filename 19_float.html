@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>float</title>
+  <style>
+    .dumy_img{
+      float: left;
+    }
+    .par{
+      word-break: break-all;
+    }
+    .break{
+      clear:both; /* float의 방향과 맞춰주거나 both를 사용 */
+    }
+    img{
+      vertical-align: top; /* 이미지 아래에 생기는 공백을 없애줌 */
+    }
+    .portfolio{
+      background-color: green;
+    }
+    .portfolio p{
+      border: 2px solid;
+      margin: 0;
+      float: left;
+    }
+    .portfolio::after{
+      content: "";
+      display: block;
+      clear: both;
+      position: ;
+    }
+  </style>
+</head>
+<body>
+  <h1>float 특징</h1>
+  <h2></h2>
+  <h2>사진과 글이 나란히 있을 때 깔끔하게 끊어서 보이게 하기</h2>
+  <img class="dumy_img" src="http://via.placeholder.com/200" alt="">
+  <p class="par">
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa, qui ipsum? Tempore laborum magni animi modi et quod odio veniam sint quaerat dolor <br class="break">dignissimos, optio illum aperiam, enim quibusdam. Magnam!
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa, qui ipsum? Tempore laborum magni animi modi et quod odio veniam sint quaerat dolor dignissimos, optio illum aperiam, enim quibusdam. Magnam!
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa, qui ipsum? Tempore laborum magni animi modi et quod odio veniam sint quaerat dolor dignissimos, optio illum aperiam, enim quibusdam. Magnam!
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa, qui ipsum? Tempore laborum magni animi modi et quod odio veniam sint quaerat dolor dignissimos, optio illum aperiam, enim quibusdam. Magnam!
+  </p><hr>
+  <h2>나란히 배치</h2>
+  <div class="portfolio">
+    <p>
+      <img src="http://via.placeholder.com/100" alt="">
+    </p>
+    <p>
+      <img src="http://via.placeholder.com/100" alt="">
+    </p>
+    <p>
+      <img src="http://via.placeholder.com/100" alt="">
+    </p>
+  </div>
+  
+</body>
+</html>

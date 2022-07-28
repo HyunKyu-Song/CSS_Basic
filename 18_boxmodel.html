@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BoxModel</title>
+  <style>
+    p{
+      border: 5px solid red;
+      width: 300px;
+      margin: 10px;
+      padding: 10px 50px 100px 200px;
+    }
+    div{
+      width: 300px;
+      border: 3px solid coral;
+      padding: 20px;
+      margin: 30px;
+      box-sizing: border-box; /* border까지해서 너비가 300px로 맞춰줌*/
+      box-sizing: content-box; /* 지정 안 하면 이게 기본값 (width+padding+border)*/
+    }
+  </style>
+</head>
+<body>
+  <h1>BoxModel</h1>
+  <h2>padding, border, margin</h2>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, delectus incidunt dolorum, non fugiat hic vero iste, rem eligendi deserunt laboriosam molestias asperiores possimus dicta officia nesciunt animi! Esse, deserunt.
+  </p>
+  <h2>boxsizing</h2>
+  <div>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, delectus incidunt dolorum, non fugiat hic vero iste, rem eligendi deserunt laboriosam molestias asperiores possimus dicta officia nesciunt animi! Esse, deserunt.
+  </div>
+</body>
+</html>

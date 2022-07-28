@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>positon</title>
+  <style>
+    .container{
+      width:600px; 
+      height:300px; 
+      margin:0 auto; 
+      background:yellow; 
+      position:relative;}
+    .box{
+      height:100px;
+      position:absolute;
+    }
+    .a{ 
+      background:red; 
+      top:100px; 
+      right:100%;
+      position:absolute;
+    }
+    .b{
+      background:green; 
+      top:100px; 
+      right:250px;
+    }
+    .c{
+      background:blue; 
+      bottom:100px; 
+      left:100%;
+    }
+    .par{
+      width: 300px;
+      height: 200px;
+      border: 2px solid;
+      background-color: silver;
+      position: absolute;
+      top: calc(50% - 100px); /* -(빼기) 앞뒤로 꼭 띄어쓰기 해야 함 */
+      left: calc(50% - 150px);
+      /* margin-top: -100px;
+      margin-left: -150px; */
+    }
+  </style>
+</head>
+<body>
+  <h1>positon</h1>
+  <h2>화면 가운데 띄우기 (창 크기가 변해도 가운데 고정)</h2>
+  <p class="par">
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit quia assumenda dolore animi sint ut. Reprehenderit laudantium blanditiis dolores, sunt consequatur nam veritatis voluptatum ipsa dignissimos velit necessitatibus! Inventore, quas?
+  </p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <h2>이동 버튼 크기가 변경되도 메인 컨텐츠 옆에 고정시키기</h2>
+  <div class="container">
+    <div class="box a">Left content direction Button</div>
+    <div class="box b">Main content</div>
+    <div class="box c">Right content direction Button</div>	
+  </div>
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos soluta dolores assumenda recusandae asperiores, nulla temporibus iure praesentium enim eum incidunt nesciunt, at omnis unde explicabo. Praesentium accusantium deleniti inventore!</p>
+</body>
+</html>

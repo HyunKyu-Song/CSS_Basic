@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TEXT - Style</title>
+  <style>
+    p{
+      background-color: silver;
+      width: 400px;
+    }
+    .area-pre{
+      white-space: pre;
+      /* 작성한 대로 나타남 */
+    }
+    .area-nowrap{
+      white-space: nowrap;
+      /* 감싸지 않고 빠져나감 */
+    }
+    .area-wrap{
+      white-space: pre-wrap;
+    }
+    .area-pre-line{
+      white-space: pre-line;
+    }
+    h3 a{
+      /* inline 요소는 크기를 모른다(a태그는 대표적인 inline 요소임). 즉, 크기(width, height)를 지정해도 안 바뀜 */
+      display: block;
+
+      /* background-repeat: no-repeat; 사진의 크기에 맞게 너비 지정 안 하면 사진이 반복해서 나오기 때문에 사용*/
+      width: 70px;
+      background-image: url("logo.jpg");
+      text-indent: -9999em;
+    }
+  </style>
+</head>
+<body>
+  <h1>Text - Style</h1>
+  <h2>IR 기법 (글씨를 이미지로 대체)</h2>
+  <h3><a href="https://media.genesis.com/" target="_blank">제네시스</a></h3>
+  <hr>
+  <h2>white-space</h2>
+  <p class="area-pre">
+    Lorem ipsum, 
+    dolor sit amet consectetur adipisicing elit. 
+    Repudiandae 
+    neque enim vel veniam mollitia nam atque at odit iusto, 
+    molestias aliquam maiores quos aliquid et dolorum quae qui porro dolore!
+  </p>
+  <p class="area-nowrap">
+    Lorem ipsum, 
+    dolor sit amet consectetur adipisicing elit. 
+    Repudiandae 
+    neque enim vel veniam mollitia nam atque at odit iusto, 
+    molestias aliquam maiores quos aliquid et dolorum quae qui porro dolore!
+  </p>
+  <p class="area-wrap">
+    Lorem ipsum, 
+    dolor sit amet consectetur adipisicing elit. 
+    Repudiandae 
+    neque enim vel veniam mollitia nam atque at odit iusto, 
+    molestias aliquam maiores quos aliquid et dolorum quae qui porro dolore!
+  </p>
+  <p class="area-pre-line">
+    Lorem ipsum, 
+    dolor sit amet consectetur adipisicing elit. 
+    Repudiandae 
+    neque enim vel veniam mollitia nam atque at odit iusto, 
+    molestias aliquam maiores quos aliquid et dolorum quae qui porro dolore!
+  </p>
+</body>
+</html>
