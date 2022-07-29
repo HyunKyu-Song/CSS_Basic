@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>transition</title>
+  <style>
+    img{
+      width: 200px;
+      transition-property: width;
+      transition-duration: 1s; /* 작동해서 완료되는 시간 */
+      transition-delay: 0.5s; /* hover 했을 때, 작동까지 시간 */
+    }
+    img:hover{
+      width: 400px;
+    }
+    
+    ul{
+      list-style-type: none;  
+    }
+    .main{
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      /* display: inline-block; */
+    }
+
+    .main > li {
+      float: left;
+      background-color: #333;
+    }
+    .vertical li *{
+      background-color:  #333;
+      padding-left: 15px;
+      
+    }
+    *{padding:0;margin:0}
+    .vertical{
+      /* display: none; */
+      /* position: relative; */
+      
+      
+      height: 0;
+      overflow: hidden;
+    }
+    .main > li:hover .vertical{
+      height: 200px;
+      transition-duration: 0.5s;
+      transition-delay: 0.5s;
+      display: block
+    }
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    .a{
+      text-align: left;
+      color: red;
+    }
+
+    li a:hover:not(.active) {
+      background-color: silver;
+      transition-duration: 1s;
+    }
+
+    .active {
+      background-color: #04AA6D;
+    }
+  </style>
+</head>
+<body>
+  <ul class="main">
+    <li><a class="active" href="#home">Home</a>
+      <ul class="vertical">
+        <li><a href="">프로미스나인</a></li>
+        <li><a href="">트와이스</a></li>
+        <li><a href="">여자 아이들</a></li>
+      </ul>
+    </li>
+    <li><a href="#news">News</a>
+      <ul class="vertical">
+        <li><a class="a" href="">프로미스나인</a></li>
+        <li><a href="">트와이스</a></li>
+        <li><a href="">여자 아이들</a></li>
+      </ul>
+    </li>
+    <li><a href="#contact">Contact</a>
+      <ul class="vertical">
+        <li><a href="">프로미스나인</a></li>
+        <li><a href="">트와이스</a></li>
+        <li><a href="">여자 아이들</a></li>
+      </ul>
+    </li>
+    <li><a href="#about">About</a>
+      <ul class="vertical">
+        <li><a href="">프로미스나인</a></li>
+        <li><a href="">트와이스</a></li>
+        <li><a href="">여자 아이들</a></li>
+      </ul>
+    </li>
+  </ul>
+  
+  <h1>transition</h1>
+  <h2>전화되는 과정을 보여주는 속성</h2>
+  <img src="http://via.placeholder.com/200" alt="">
+</body>
+</html>
